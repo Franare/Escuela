@@ -24,6 +24,10 @@ body{
     float: left;  
 }
 
+.logos .sep {
+    width: 200px; height: 90px;
+}
+
 .nombre h1{
     float: left;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -121,8 +125,7 @@ header > ul{
     }
 }
 
-@media only screen and (max-width: 626px ) {
-    
+@media only screen and (max-width: 626px ) {    
     header > ul{
         display: flex;
         flex-direction: column;
@@ -137,5 +140,16 @@ header > ul{
     }
     header.menu{
         height: 210px;
+    }
+}
+
+@media only screen and (max-width: 404px ) {
+    .logos img{
+        width: 30%; 
+        height: 30%;
+    }
+    .logos .sep {
+        width: 35%; 
+        height: 35%;
     }
 }
